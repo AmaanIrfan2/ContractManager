@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Page</title>
+<head th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}">
+    <title>Sign Up Page</title>
 </head>
 <body>
-    <p>Signup with new customer details</p>
+    <div id="content">
+        <h1>Welcome to Sign Up Page</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi eaque, harum minima corrupti nulla adipisci molestiae quibusdam quidem dolorum, doloremque illum libero. Consectetur nam est maxime accusantium corrupti mollitia quidem.</p>
+    </div>
+    <script>console.log("Sign Up Page");</script>
 </body>
 </html>

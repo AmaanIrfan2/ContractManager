@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"
+      th:fragment="parent(content, title, script)"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
+    <title data-th-replace="${title}"> Contract Manager</title>
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet">
 </head>
 <body>
 
-    #common header for all pages
+    <!-- common header for all pages -->
     <div data-th-replace="navbar :: navbar"> </div>
 
-    #main content
+    <!-- main content -->
     <div class="p-4"> 
         <section data-th-replace="${content}"></section>
     </div>

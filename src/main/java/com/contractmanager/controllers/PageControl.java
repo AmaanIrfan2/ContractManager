@@ -1,7 +1,6 @@
 package com.contractmanager.controllers;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -31,13 +30,13 @@ public class PageControl {
     }
 
     @RequestMapping("/login")
-    public String base(){
+    public String login(){
         System.out.println("A login page");
         return "login";
     }
 
     @RequestMapping("/signup")
-    public String base(){
+    public String signup(){
         System.out.println("A signup page");
         return "signup";
     }

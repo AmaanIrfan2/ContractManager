@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" th:replace="@{base :: parent(~{::#content}, ~{::#title}, ~{::#script})}">
-<head>
+<html lang="en">
+<head th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}">
     <title>Home Page</title>
 </head>
 <body>
     <div id="content">
         <h1>Welcome to Home Page</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi eaque, harum minima corrupti nulla adipisci molestiae quibusdam quidem dolorum, doloremque illum libero. Consectetur nam est maxime accusantium corrupti mollitia quidem.</p>
-
     </div>
     <script>console.log("Home Page");</script>
 </body>
