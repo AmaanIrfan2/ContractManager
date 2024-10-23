@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+    #common header for all pages
+    <div data-th-replace="navbar :: navbar"> </div>
+
+    #main content
+    <div class="p-4"> 
+        <section data-th-replace="${content}"></section>
+    </div>
+    
+</body>
+</html>
