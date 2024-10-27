@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is the About Page</title>
+<html>
+
+ <head  th:replace="~{base :: parent(~{::#content}, ~{::title}, ~{::script})}">
+    <title>About Page</title>
 </head>
 <body>
-    <h1>Gonna tell everything about the business here</h1>
+    <section id="content">
+    <h1>Welcome to About page</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio velit reiciendis earum aliquid. Debitis quibusdam delectus consequatur optio? Deserunt non totam repudiandae ab voluptates. Nulla, veniam? Dignissimos molestiae exercitationem veniam!</p>
+    </section>
+    <script>console.log("About page")</script>
 </body>
 </html>
